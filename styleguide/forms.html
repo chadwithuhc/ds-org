@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="ie-ok"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide | Forms</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <link href="/assets/application.css" media="all" rel="stylesheet" />
+  <link href="/assets/styleguide.css" media="all" rel="stylesheet" />
+  <meta name="viewport" content="initial-scale=1">
+  <meta name="theme-color" content="#be2c99">
+  <meta name="msapplication-navbutton-color" content="#be2c99">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#be2c99">
+  <link href="/assets/font-awesome.css" rel="stylesheet">
+  <style>@media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+          font-family: 'FontAwesome';
+          src: url('/assets/fonts/fontawesome-webfont.svg') format('svg');;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    window.DS = {
+      routes: {
+        update_metric_path: "/locations/update_metric",
+        compare_locations_path: "/locations/compare",
+        surveys_path: "/domestic-violence-surveys"
+      }
+    };
+  </script>
+</head>
+<body class="styleguide forms">
+  <article>
+    <div class="content clearfix">
+      <div class="basic-page">
+        <div class="bread">
+          <a href="/">Home</a>
+            <i class="fa fa-angle-double-right"></i>
+            <a href="/styleguide/">Style Guide</a>
+            <i class="fa fa-angle-double-right"></i>
+            Forms
+        </div>
+
+        <ul class="link-menu-inline link-menu-inline--upped _pull-right">
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/">Base</a></li>
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/forms.html">Forms</a></li>
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/components.html">Components</a></li>
+        </ul>
+
+        <h1>Forms</h1>
+
+        <!-- Forms -->
+        <div class="boxed-container boxed-container--vertical">
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Form Parts</h2>
+            <p class="boxed-container__subtitle">Form bits and pieces for grouping together</p>
+          </div>
+          <div class="boxed-container__body">
+
+            <h3><code>.form-section</code> -- grouping to a container with bottom margin</h3>
+            <h3><code>.form-group</code> -- grouping to a container</h3>
+            <h3><code>.field</code> -- label / input grouping to a container</h3>
+            <h3><code>.left</code> -- left floating</h3>
+            <h3><code>.right</code> -- right floating</h3>
+            <h3><code>.max</code> -- full width</h3>
+            <h3><code>.required</code> -- required label</h3>
+
+            <div class="form-section">
+              <div class="form-group">
+                <div class="field left required">
+                  <label for="">Field Label</label>
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <h3><code>.form-buttons</code> -- grouping to a container of buttons</h3>
+
+            <div class="form-buttons">
+              <div class="form-group left">
+                <button class="button">Cancel</button>
+              </div>
+              <div class="form-group right _align-right">
+                <button class="button button--color3">Save</button>
+              </div>
+            </div>
+
+            <h3><code>.field-with-button</code> -- field with attached button</h3>
+
+            <div class="field-with-button field-with-button--xl">
+              <input type="text" class="field-with-button__input" placeholder="Search..." />
+              <button class="field-with-button__button button button--color2"><i class="field-with-button__button-icon fa fa-search"></i></button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="boxed-container">
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Full Form</h2>
+            <p class="boxed-container__subtitle">Grid layout for a full form</p>
+          </div>
+          <div class="boxed-container__body">
+
+            <form action="">
+              <div class="form-section">
+                <div class="form-group left">
+                  <div class="field required">
+                    <label for="">Field Label</label>
+                    <input type="text">
+                  </div>
+                  <div class="field required">
+                    <label for="">Field Label</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="form-group right">
+                  <div class="field required">
+                    <label for="">Field Label</label>
+                    <input type="text">
+                  </div>
+                  <div class="form-group left">
+                    <div class="field">
+                      <label for="">Field Label</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="form-group right">
+                    <div class="field">
+                      <label for="">Field Label</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="_clear-both"></div>
+
+                <div class="field max required">
+                  <label for="">Field Label</label>
+                  <input type="text">
+                </div>
+
+              </div>
+
+              <div class="form-buttons">
+                <div class="form-group left">
+                  <button class="button">Cancel</button>
+                </div>
+                <div class="form-group right _align-right">
+                  <button class="button button--color3">Save</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="boxed-container boxed-container--vertical">
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Form Errors</h2>
+            <p class="boxed-container__subtitle">Error state for form elements</p>
+          </div>
+          <div class="boxed-container__body">
+
+            <div class="form-section">
+              <div class="form-group">
+                <div class="field required">
+                  <label for="">Text Error</label>
+                  <input type="text" class="error" value="John Smith">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-group">
+                <div class="field required">
+                  <label for="">Email Error</label>
+                  <input type="email" class="error" value="email@example">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-group">
+                <div class="field required">
+                  <label for="">Password Error</label>
+                  <input type="password" class="error" value="secret">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-group">
+                <input type="checkbox"><label class="error">Checkbox Error</label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-group">
+                <label>Select Error</label>
+                <select class="error">
+                  <option value="option 1">Option 1</option>
+                  <option value="option 2">Option 2</option>
+                  <option value="option 3" disabled>Option 3</option>
+                  <option value="option 4">Option 4</option>
+                  <option value="option 5">Option 5</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!-- .basic-page -->
+
+    </div> <!-- .content -->
+  </article>
+  <footer>
+    <div class="content">
+      <div class="fine-print">
+        <p class="copyright">
+          Copyright &copy; 2017 Theresa's Fund, Inc., an Arizona 501(c)3. All rights reserved<br>
+          <a href="javascript:void(0)">Privacy Policy</a> | <a href="javascript:void(0)">Terms of Use</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/vendor.js"></script>
+  <script src="/assets/application.js"></script>
+
+</body>
+</html>

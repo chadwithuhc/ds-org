@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="ie-ok"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Flexible Data Grid</title>
+  <meta name="viewport" content="initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <link href="/assets/font-awesome.css" rel="stylesheet">
+  <link href="/assets/application.css" media="all" rel="stylesheet" />
+  <link href="/assets/print.css" media="print" rel="stylesheet" />
+
+  <style>@media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+          font-family: 'FontAwesome';
+          src: url('/assets/fonts/fontawesome-webfont.svg') format('svg');;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    window.DS = {
+      routes: {
+        update_metric_path: "/locations/update_metric",
+        compare_locations_path: "/locations/compare",
+        surveys_path: "/domestic-violence-surveys",
+        events_path: "/domestic-violence-events"
+      }
+    };
+  </script>
+</head>
+<body class="rankings people_using_shelters_by_state">
+  <article ic-history-elt>
+    <div class="content clearfix">
+
+      <h1>Number of People Using Domestic Violence Shelters by State</h1>
+
+      <p>Below you will find a state-by-state look at the number of women, men and children using domestic violence shelters and programs, as reported by domestic violence shelters and programs. A total of 743 shelters and programs report their utilization data to this site out of 2,957 shelters and programs in our database. To scroll left and right, click on a row and drag your cursor left or right.</p>
+
+
+      <div class="loading-block"><i class="fa fa-spinner fa-spin"></i> Generating Report...</div>
+
+      <div class="reports__mobile-message">
+        <p>This section of the Data Center is only available on larger devices. Please visit this page from your Desktop or Tablet device.</p>
+      </div>
+
+      <div class="reports__results-page" ng-app="ds-ranking" ng-controller="RankingResultsCtrl" ng-cloak ng-show="results.data">
+
+        <div class="reports__grid reports__grid--scrollable" ng-class="getReportClasses()">
+
+          <!-- Locked Columns -->
+          <div class="col-labels">
+            <div class="col-labels-row">
+              <div class="sticky-header">
+                <span class="row-item row-item--column-title" ng-class="getDynamicClassName(column.property, 'row-item--[value]-title')" ng-click="toggleSort(column)" ng-repeat="column in results.columns.slice(0, lockColumns)">
+                  <button class="button" ng-class="getColumnTitleClasses(column)">{{ column.title }}</button>
+                </span>
+              </div>
+              <span class="row-item row-item--aggregate" ng-class="{ 'row-item--highlighted': isAggregateRowHighlighted($index) }" ng-mouseover="mouseOverAggregateRow($index)" ng-mouseout="mouseOutAggregateRow($index)" ng-bind-html="wrapLabelName(results.totals.title)"></span>
+              <span class="row-item row-item--expandable" ng-class="{ 'row-item--highlighted': isRowHighlighted($index) }" ng-mouseover="mouseOverRow($index)" ng-mouseout="mouseOutRow($index)" ng-repeat="row in results.data | orderBy: sortBy">
+                <span class="row-item--expandable__text" ng-bind-html="wrapLabelName(row.title)"></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="scrollable-area scrollable-right">
+            <div class="col-results-grid">
+              <div class="col-results">
+                <div class="sticky-header">
+                <span class="row-item row-item--column-title" ng-class="getDynamicClassName(column.property, 'row-item--[value]-value')" ng-click="toggleSort(column)" ng-repeat="column in results.columns.slice(lockColumns)">
+                  <button class="button" ng-class="getColumnTitleClasses(column)">{{ column.title }}</button>
+                </span>
+                </div>
+              <span class="row-items row-item--aggregate" ng-class="{ 'row-items--highlighted': isAggregateRowHighlighted($index) }" ng-mouseover="mouseOverAggregateRow($index)" ng-mouseout="mouseOutAggregateRow($index)">
+                <span class="row-item" ng-class="getDynamicClassName(column.property, 'row-item--[value]-value')" ng-repeat="column in results.columns.slice(lockColumns)" ng-bind-html="getFormattedResultsValue(results.totals, column)"></span>
+              </span>
+              <span class="row-items" ng-repeat="row in results.data | orderBy: sortBy" ng-class="{ 'row-items--highlighted': isRowHighlighted($index) }" ng-mouseover="mouseOverRow($index)" ng-mouseout="mouseOutRow($index)">
+                <span class="row-item" ng-class="getDynamicClassName(column.property, 'row-item--[value]-value')" ng-repeat="column in results.columns.slice(lockColumns)" ng-bind-html="getFormattedResultsValue(row, column)"></span>
+              </span>
+              </div>
+            </div>
+            <span class="scroll-shadow shadow-left"></span>
+            <span class="scroll-shadow shadow-right"></span>
+          </div>
+
+        </div> <!-- .reports__grid -->
+
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <div class="content">
+      <div class="fine-print">
+        <p class="copyright">
+          Copyright &copy; 2017 Theresa's Fund, Inc., an Arizona 501(c)3. All rights reserved<br>
+          <a href="https://www.domesticshelters.org/privacy-policy">Privacy Policy</a> | <a href="https://www.domesticshelters.org/terms-of-use">Terms of Use</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/vendor.js"></script>
+  <script src="/assets/application.js"></script>
+  <script src="/assets/ranking.js"></script>
+  <script>
+    angular.module('ds-ranking').constant('reportID', 'people_using_shelters_by_state');
+  </script>
+
+</body>
+</html>
