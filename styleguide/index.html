@@ -8,17 +8,17 @@
   <meta charset="utf-8">
   <title>Style Guide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <link href="/assets/application.css" media="all" rel="stylesheet" />
-  <link href="/assets/styleguide.css" media="all" rel="stylesheet" />
+  <link href="../assets/application.css" media="all" rel="stylesheet" />
+  <link href="../assets/styleguide.css" media="all" rel="stylesheet" />
   <meta name="viewport" content="initial-scale=1">
   <meta name="theme-color" content="#be2c99">
   <meta name="msapplication-navbutton-color" content="#be2c99">
   <meta name="apple-mobile-web-app-status-bar-style" content="#be2c99">
-  <link href="/assets/font-awesome.css" rel="stylesheet">
+  <link href="../assets/font-awesome.css" rel="stylesheet">
   <style>@media screen and (-webkit-min-device-pixel-ratio:0) {
       @font-face {
           font-family: 'FontAwesome';
-          src: url('/assets/fonts/fontawesome-webfont.svg') format('svg');;
+          src: url('../assets/fonts/fontawesome-webfont.svg') format('svg');
       }
     }
   </style>
@@ -34,280 +34,272 @@
 </head>
 <body class="styleguide index">
 
+  <article>
+    <div class="content clearfix">
 
-
-        <article>
-          <div class="content clearfix">
-
-
-
-
-<div class="basic-page">
-  <div class="bread">
-  <a href="/">Home</a>
-
-    <i class="fa fa-angle-double-right"></i>
-
-    Style Guide
-</div>
-
-  <ul class="link-menu-inline link-menu-inline--upped _pull-right">
-  <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/">Base</a></li>
-  <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/forms.html">Forms</a></li>
-  <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="/styleguide/components.html">Components</a></li>
-</ul>
-
-  <h1>Style Guide</h1>
-
-  <!--
-    Adding a new component will include adding a `div.boxed-container__header` for titles
-    and `div.boxed-container__body` for example.
-
-    If you want them to display within a #main-col size, leave them as a direct child of `div.boxed-container`
-    If you wish to show them full content width, wrap them in another element such as `section`
-  -->
-
-  <div class="boxed-container boxed-container--vertical">
-
-    <!-- Colors -->
-    <section>
-      <div class="boxed-container__header">
-        <h2 class="boxed-container__title">Colors</h2>
-      </div>
-      <div class="boxed-container__body">
-        <div class="swatch swatch--dark" style="background: #dc3996">$magenta <br>#dc3996</div>
-        <div class="swatch swatch--dark" style="background: #90c73e">$green <br>#90c73e</div>
-        <div class="swatch swatch--dark" style="background: #ffa53a">$orange <br>#ffa53a</div>
-        <div class="swatch swatch--dark" style="background: #F71F4A">$red <br> #F71F4A</div>
-        <div class="swatch swatch--dark" style="background: #000000">$black <br> #000000</div>
-        <hr>
-        <div class="swatch" style="background: #F1F1F1">$extra-light-grey <br> #F1F1F1</div>
-        <div class="swatch" style="background: #E6E6E6">$light-grey <br> #E6E6E6</div>
-        <div class="swatch" style="background: #CCC">$medium-grey <br> #CCC</div>
-        <div class="swatch swatch--dark" style="background: #7f7f7f">$dark-grey <br> #7f7f7f</div>
-        <div class="swatch swatch--dark" style="background: #444444">$super-dark-grey <br>#444444</div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- Typography -->
-    <div class="boxed-container__header">
-      <h2 class="boxed-container__title">Typography</h2>
-    </div>
-    <div class="boxed-container__body">
-      <h1>Header Level 1</h1>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h2>Header Level 2</h2>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h3>Header Level 3</h3>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h4>Header Level 4</h4>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h5>Header Level 5</h5>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h6>Header Level 6</h6>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-      <hr>
-
-      <h2>Read More Link</h2>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <a href="javascript:void(0)" class="read-more">Read More</a>
-
-      <hr>
-
-      <h2>Lists</h2>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <ul>
-        <li>List item 1</li>
-        <li>List item 2
-          <ul>
-            <li>Nested List Item 1</li>
-            <li>Nested List Item 2</li>
-          </ul>
-        </li>
-        <li>List item 3</li>
-      </ul>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-      <ol>
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2
-          <ol>
-            <li>Nested List Item 1</li>
-            <li>Nested List Item 2</li>
-          </ol>
-        </li>
-        <li>Ordered list item 3</li>
-      </ol>
-      <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
-
-    </div>
-
-    <hr>
-
-    <!-- Alerts and Notification -->
-    <div class="boxed-container__header">
-      <h2 class="boxed-container__title">Alerts and Notifications</h2>
-    </div>
-    <div class="boxed-container__body">
-      <h2>Flash Messages</h2>
-      <div class="js-flash-messages flash-msg notice">
-        <div>Notice message</div>
-      </div>
-      <hr>
-      <h2>Errors</h2>
-      <ul class="errors">
-        <li>This is an error message</li>
-      </ul>
-    </div>
-
-    <hr>
-
-    <!-- Buttons -->
-    <div class="boxed-container__header">
-      <h2 class="boxed-container__title">Buttons</h2>
-    </div>
-    <div class="boxed-container__body">
-      <button class="btn btn1 btn-size">Button 1</button>
-      <button class="btn btn2 btn-size">Button 2</button>
-      <button class="btn btn3 btn-size">Button 3</button>
-      <hr>
-      <h2>Sizes</h2>
-      <button class="btn btn2 btn-size-small">Button Small</button><br><br>
-      <button class="btn btn2 btn-size">Button Default</button><br><br>
-      <button class="btn btn2 btn-size-wide">Button Wide</button>
-    </div>
-
-    <hr>
-
-    <!-- Forms -->
-    <div class="boxed-container__header">
-      <h2 class="boxed-container__title">Forms</h2>
-    </div>
-    <div class="boxed-container__body">
-      <label for="input">Input</label>
-      <input type="text" />
-      <hr>
-      <label for="input">Search Box</label>
-      <div class="search-box"><input type="text" /></div>
-      <hr>
-      <label for="text">Textarea</label>
-      <textarea name="text" id="text" cols="20" rows="3"></textarea>
-      <hr>
-      <label for="selectbox">Selectbox (selecting values)</label>
-      <div class="select">
-        <select name="selectbox" id="selectbox">
-          <option value="">-- Default --</option>
-          <option value="Option1">Option 1</option>
-          <option value="Option2">Option 2</option>
-        </select>
-      </div>
-      <hr>
-      <label for="dropdown">Dropdown (actions)</label>
-      <div class="dropdown-menu">
-        <button class="button dropdown-menu__trigger">All categories <i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-menu__options">
-          <a href="javascript:void(0)" class="dropdown-menu__option">Domestic Violence</a>
-          <a href="javascript:void(0)" class="dropdown-menu__option">Child Abuse</a>
-          <a href="javascript:void(0)" class="dropdown-menu__option">Elder Abuse</a>
-        </div>
-      </div>
-      <div class="dropdown-menu dropdown-menu--from-center">
-        <button class="button dropdown-menu__trigger dropdown-menu__trigger--icon"><i class="fa fa-cog"></i></button>
-        <div class="dropdown-menu__options">
-          <a href="javascript:void(0)" class="dropdown-menu__option">Use list from another location</a>
-          <a href="javascript:void(0)" class="dropdown-menu__option">Remove all items from this list</a>
-        </div>
-      </div>
-      <hr>
-      <input type="checkbox" name="checkbox" id="checkbox">
-      <label for="checkbox">Checkbox</label>
-      <hr>
-      <input type="radio" name="radio" value="radio" id="radio">
-      <label for="radio">Radio</label><br>
-      <input type="radio" name="radio" value="radio1" id="radio1">
-      <label for="radio1">Radio</label>
-      <hr>
-      <div class="image-upload">
-        <div class="file-field">
-          <input class="custom-file-input" id="file" name="file" type="file" />
-          <button class="custom-file-input-button btn1 btn btn-size">Select an image</button>
-          <span class="custom-file-input-file-name">No File Selected</span>
+      <div class="basic-page">
+        <div class="bread">
+          <a href="../">Home</a>
+            <i class="fa fa-angle-double-right"></i>
+            Style Guide
         </div>
 
-      </div>
+        <ul class="link-menu-inline link-menu-inline--upped _pull-right">
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="./">Base</a></li>
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="./forms.html">Forms</a></li>
+          <li class="link-menu-inline__item"><a class="link-menu-inline__link" href="./components.html">Components</a></li>
+        </ul>
 
-      <hr>
-      <button class="btn btn2 btn-size" disabled>Disabled Button</button>
-    </div>
+        <h1>Style Guide</h1>
 
-    <hr>
+        <!--
+          Adding a new component will include adding a `div.boxed-container__header` for titles
+          and `div.boxed-container__body` for example.
 
-    <!-- Icons -->
-    <div class="boxed-container__header">
-      <h2 class="boxed-container__title">Icons</h2>
-    </div>
-    <div class="boxed-container__body">
-      <p><em>All icons are using FontAwesome. Hover for class name.</em></p>
-      <hr>
-      <h2>Pre-styled</h2>
-      <i class="fa fa-question-circle" title="fa-question-circle"></i>
-      <i class="fa fa-check" title="fa-check"></i>
-      <i class="fa fa-times" title="fa-times"></i>
-      <hr>
-      <h2>Common</h2>
-      <i class="fa fa-info-circle" title="fa-info-circle"></i>
-      <i class="fa fa-camera" title="fa-camera"></i>
-      <i class="fa fa-briefcase" title="fa-briefcase"></i>
-      <i class="fa fa-users" title="fa-users"></i>
-      <i class="fa fa-angle-left" title="fa-angle-left"></i>
-      <i class="fa fa-angle-right" title="fa-angle-right"></i>
-      <i class="fa fa-angle-double-right" title="fa-angle-double-right"></i>
-      <i class="fa fa-map-marker" title="fa-map-marker"></i>
-      <i class="fa fa-search" title="fa-search"></i>
-    </div>
+          If you want them to display within a #main-col size, leave them as a direct child of `div.boxed-container`
+          If you wish to show them full content width, wrap them in another element such as `section`
+        -->
 
+        <div class="boxed-container boxed-container--vertical">
 
-  </div> <!-- .boxed-container--vertical -->
-</div>
-          </div>
-        </article>
-        <footer>
-          <div class="content">
-            <div class="fine-print">
-              <p class="copyright">
-                Copyright &copy; 2017 Theresa's Fund, Inc., an Arizona 501(c)3. All rights reserved<br>
-                <a href="javascript:void(0)">Privacy Policy</a> | <a href="javascript:void(0)">Terms of Use</a>
-              </p>
+          <!-- Colors -->
+          <section>
+            <div class="boxed-container__header">
+              <h2 class="boxed-container__title">Colors</h2>
             </div>
+            <div class="boxed-container__body">
+              <div class="swatch swatch--dark" style="background: #dc3996">$magenta <br>#dc3996</div>
+              <div class="swatch swatch--dark" style="background: #90c73e">$green <br>#90c73e</div>
+              <div class="swatch swatch--dark" style="background: #ffa53a">$orange <br>#ffa53a</div>
+              <div class="swatch swatch--dark" style="background: #F71F4A">$red <br> #F71F4A</div>
+              <div class="swatch swatch--dark" style="background: #000000">$black <br> #000000</div>
+              <hr>
+              <div class="swatch" style="background: #F1F1F1">$extra-light-grey <br> #F1F1F1</div>
+              <div class="swatch" style="background: #E6E6E6">$light-grey <br> #E6E6E6</div>
+              <div class="swatch" style="background: #CCC">$medium-grey <br> #CCC</div>
+              <div class="swatch swatch--dark" style="background: #7f7f7f">$dark-grey <br> #7f7f7f</div>
+              <div class="swatch swatch--dark" style="background: #444444">$super-dark-grey <br>#444444</div>
+            </div>
+          </section>
+
+          <hr>
+
+          <!-- Typography -->
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Typography</h2>
+          </div>
+          <div class="boxed-container__body">
+            <h1>Header Level 1</h1>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h2>Header Level 2</h2>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h3>Header Level 3</h3>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h4>Header Level 4</h4>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h5>Header Level 5</h5>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h6>Header Level 6</h6>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <p>Lorem ipsum <a href="javascript:void(0)">dolor sit amet</a>, consectetur adipisicing elit. <strong>Adipisci consequuntur corporis</strong> eaque enim eum fugiat fugit labore magnam <em>molestiae nemo numquam</em>, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
+            <hr>
+
+            <h2>Read More Link</h2>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <a href="javascript:void(0)" class="read-more">Read More</a>
+
+            <hr>
+
+            <h2>Lists</h2>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2
+                <ul>
+                  <li>Nested List Item 1</li>
+                  <li>Nested List Item 2</li>
+                </ul>
+              </li>
+              <li>List item 3</li>
+            </ul>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2
+                <ol>
+                  <li>Nested List Item 1</li>
+                  <li>Nested List Item 2</li>
+                </ol>
+              </li>
+              <li>Ordered list item 3</li>
+            </ol>
+            <p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur corporis eaque enim eum fugiat fugit labore magnam molestiae nemo numquam, perferendis quae quam qui quo rerum sunt ullam velit.</p>
+
           </div>
 
-        </footer>
+          <hr>
 
-  <script src="/assets/vendor.js"></script>
-<script src="/assets/application.js"></script>
+          <!-- Alerts and Notification -->
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Alerts and Notifications</h2>
+          </div>
+          <div class="boxed-container__body">
+            <h2>Flash Messages</h2>
+            <div class="js-flash-messages flash-msg notice">
+              <div>Notice message</div>
+            </div>
+            <hr>
+            <h2>Errors</h2>
+            <ul class="errors">
+              <li>This is an error message</li>
+            </ul>
+          </div>
+
+          <hr>
+
+          <!-- Buttons -->
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Buttons</h2>
+          </div>
+          <div class="boxed-container__body">
+            <button class="btn btn1 btn-size">Button 1</button>
+            <button class="btn btn2 btn-size">Button 2</button>
+            <button class="btn btn3 btn-size">Button 3</button>
+            <hr>
+            <h2>Sizes</h2>
+            <button class="btn btn2 btn-size-small">Button Small</button><br><br>
+            <button class="btn btn2 btn-size">Button Default</button><br><br>
+            <button class="btn btn2 btn-size-wide">Button Wide</button>
+          </div>
+
+          <hr>
+
+          <!-- Forms -->
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Forms</h2>
+          </div>
+          <div class="boxed-container__body">
+            <label for="input">Input</label>
+            <input type="text" />
+            <hr>
+            <label for="input">Search Box</label>
+            <div class="search-box"><input type="text" /></div>
+            <hr>
+            <label for="text">Textarea</label>
+            <textarea name="text" id="text" cols="20" rows="3"></textarea>
+            <hr>
+            <label for="selectbox">Selectbox (selecting values)</label>
+            <div class="select">
+              <select name="selectbox" id="selectbox">
+                <option value="">-- Default --</option>
+                <option value="Option1">Option 1</option>
+                <option value="Option2">Option 2</option>
+              </select>
+            </div>
+            <hr>
+            <label for="dropdown">Dropdown (actions)</label>
+            <div class="dropdown-menu">
+              <button class="button dropdown-menu__trigger">All categories <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-menu__options">
+                <a href="javascript:void(0)" class="dropdown-menu__option">Domestic Violence</a>
+                <a href="javascript:void(0)" class="dropdown-menu__option">Child Abuse</a>
+                <a href="javascript:void(0)" class="dropdown-menu__option">Elder Abuse</a>
+              </div>
+            </div>
+            <div class="dropdown-menu dropdown-menu--from-center">
+              <button class="button dropdown-menu__trigger dropdown-menu__trigger--icon"><i class="fa fa-cog"></i></button>
+              <div class="dropdown-menu__options">
+                <a href="javascript:void(0)" class="dropdown-menu__option">Use list from another location</a>
+                <a href="javascript:void(0)" class="dropdown-menu__option">Remove all items from this list</a>
+              </div>
+            </div>
+            <hr>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Checkbox</label>
+            <hr>
+            <input type="radio" name="radio" value="radio" id="radio">
+            <label for="radio">Radio</label><br>
+            <input type="radio" name="radio" value="radio1" id="radio1">
+            <label for="radio1">Radio</label>
+            <hr>
+            <div class="image-upload">
+              <div class="file-field">
+                <input class="custom-file-input" id="file" name="file" type="file" />
+                <button class="custom-file-input-button btn1 btn btn-size">Select an image</button>
+                <span class="custom-file-input-file-name">No File Selected</span>
+              </div>
+
+            </div>
+
+            <hr>
+            <button class="btn btn2 btn-size" disabled>Disabled Button</button>
+          </div>
+
+          <hr>
+
+          <!-- Icons -->
+          <div class="boxed-container__header">
+            <h2 class="boxed-container__title">Icons</h2>
+          </div>
+          <div class="boxed-container__body">
+            <p><em>All icons are using FontAwesome. Hover for class name.</em></p>
+            <hr>
+            <h2>Pre-styled</h2>
+            <i class="fa fa-question-circle" title="fa-question-circle"></i>
+            <i class="fa fa-check" title="fa-check"></i>
+            <i class="fa fa-times" title="fa-times"></i>
+            <hr>
+            <h2>Common</h2>
+            <i class="fa fa-info-circle" title="fa-info-circle"></i>
+            <i class="fa fa-camera" title="fa-camera"></i>
+            <i class="fa fa-briefcase" title="fa-briefcase"></i>
+            <i class="fa fa-users" title="fa-users"></i>
+            <i class="fa fa-angle-left" title="fa-angle-left"></i>
+            <i class="fa fa-angle-right" title="fa-angle-right"></i>
+            <i class="fa fa-angle-double-right" title="fa-angle-double-right"></i>
+            <i class="fa fa-map-marker" title="fa-map-marker"></i>
+            <i class="fa fa-search" title="fa-search"></i>
+          </div>
+
+        </div> <!-- .boxed-container--vertical -->
+      </div> <!-- .basic-page -->
+
+    </div> <!-- .content -->
+  </article>
+  <footer>
+    <div class="content">
+      <div class="fine-print">
+        <p class="copyright">
+          Copyright &copy; 2017 Theresa's Fund, Inc., an Arizona 501(c)3. All rights reserved<br>
+          <a href="javascript:void(0)">Privacy Policy</a> | <a href="javascript:void(0)">Terms of Use</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/vendor.js"></script>
+  <script src="../assets/application.js"></script>
 
 </body>
 </html>

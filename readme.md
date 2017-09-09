@@ -1,4 +1,4 @@
-# DS.org Pieces
+# DS.org Components
 
 Built by [@chadwithuhc](https://github.com/chadwithuhc) for [bythepixel.com](https://bythepixel.com)
 
@@ -18,6 +18,6 @@ An overlayed, fluid dropdown navigation with responsive support.
 
 ## Style Guide
 
-[Demo: Style Guide](./style-guide/)
+[Demo: Style Guide](./styleguide/)
 
 Reusable component visual style guide
